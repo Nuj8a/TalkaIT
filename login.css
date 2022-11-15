@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#loginContainer {
+    /* background-color: blue; */
+    position: relative;
+    top:26vh;
+    left:25%;
+    height: 415px;
+    width: 750px;
+    padding: 15px;
+}
+
+#loginLogo {
+    position: absolute;
+    border-right: dotted 4px gainsboro;
+    /* background-color: yellow; */
+    width: 45%;
+    height:50%;
+    margin-top: 50px;
+
+}
+
+#logo{
+    position: relative;
+    /* background-color: blanchedalmond; */
+}
+
+#talkkait{
+    top:50px;
+    color:rgb(120, 120, 120);
+    position: absolute;
+    font-size: 75px;
+ /* background-color: blueviolet; */
+}
+
+#talkfree{
+    color:rgb(120, 120, 120);
+    position: absolute;
+    top:142px;
+    left:40%;
+    /* background-color: aqua; */
+}
+
+#login {
+    position: absolute;
+    /* background-color: wheat; */
+    width: 45%;
+    left: 52%;
+    height:80%;
+    /* border: 1px solid; */
+}
+
+form{
+    position: absolute;
+    border-radius:14px;
+    height:90%;
+    width:100%;
+    background-color:whitesmoke;
+    padding:30px;
+    border:2px solid gainsboro;
+}
+
+label {
+    font-size: 16px;
+    padding:8px;
+    color: rgb(91, 91, 91);
+    /* background-color:yellow; */
+    /* background-color: rgb(255, 255, 255); */
+ 
+    
+}
+
+#userId{
+    height: 40px;
+    border-radius: 10px;
+    border: 50px;
+    font-size: 16px;
+    /* background-color: rgb(255, 255, 255); */
+    width:100%;
+    outline: none;
+    padding:10px;
+    border: 2px solid gainsboro;
+}
+
+
+#password{
+    height: 40px;
+    border-radius: 10px;
+    border: 50px;
+    font-size: 16px;
+    position:relative;
+    padding: 10px;
+    /* background-color: rgb(255, 255, 255); */
+    width:100%;
+    outline: none;
+    border: 2px solid gainsboro;
+}
+
+#show{
+    height:20px;
+    width:25x;
+    position:absolute;
+    border-radius:20px;
+    border:none;
+    background-color: white;
+    left:270px;
+    top:135px;
+    
+}
+
+#show:hover{
+    background-color:#c4c3d0; 
+}
+
+#show img{
+    /* top:6px; */
+    /* position: absolute; */
+    height:20px;
+    width:20px;
+    /* right:5px; */
+}
+
+span{
+    color:rgb(71, 71, 71);
+    
+}
+
+#loginbtn{
+    border-radius: 10px;
+    height: 40px;
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+    border: 2px solid rgb(221, 221, 221);
+   
+    background-color: rgb(211, 211, 211);
+}
+
+#loginbtn a{
+    text-decoration: none;
+    color: rgba(39, 39, 39, 0.611);
+    /* background-color: blueviolet; */
+    
+}

@@ -1,0 +1,150 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: url("background.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.632);
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    /* background-color: blue; */
+    box-shadow: 0px 7px 10px 4px rgb(178, 178, 178);
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    width: 25vw;
+    position: fixed;
+    height: 52vh;
+    left: 37%;
+    top: 175px;
+    border-radius: 10px;
+}
+
+.info {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    margin-top: 10px;
+    height: 48vh;
+    z-index: 1;
+    background-blend-mode: overlay;
+}
+
+.info h2 {
+    /* background-color: rgb(174, 135, 209); */
+    background-color: rgb(255, 255, 255);
+    font-size: 29px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    text-align: center;
+    color: rgba(111, 111, 111, 0.666);
+}
+
+.info p {
+    font-size: 18px;
+    padding-top: 8px;
+    margin-top: 8px;
+    color: rgb(111, 111, 111);
+}
+
+.info form {
+    /* background-color: yellow; */
+    height: 43vh;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+label {
+    display: flex;
+    height: 30px;
+    margin-top: 10px;
+    align-items: center;
+    font-size: 16px;
+    color: rgb(91, 91, 91);
+    background-color: rgb(255, 255, 255);
+}
+
+.info #email,
+#password {
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: 2px solid gainsboro;
+}
+
+.form input {
+    padding: 8px;
+}
+
+.policy {
+
+    display: grid;
+    grid-template-columns: 14px 1fr;
+    /* background-color: chocolate; */
+    height: 50px;
+    font-size: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.policy input {
+    /* background-color:yellowgreen ; */
+    margin-top: -38px;
+    background-color: rgb(255, 255, 255);
+}
+
+.policy span {
+    /* background-color: aliceblue; */
+    background-color: rgb(255, 255, 255);
+
+}
+
+#signup {
+    margin-top: -10px;
+    padding-top: 10x;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 20px;
+    width: 100px;
+    outline: none;
+    border: 1px solid rgb(205, 205, 205);
+    color: rgba(91, 91, 91, 0.611);
+    background-color: whitesmoke;
+
+}
+
+#recover:hover {
+    cursor: pointer;
+}
+
+a {
+    font-weight: bold;
+    display: flex;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+    color: gray;
+    text-decoration: none;
+    background-color: whitesmoke;
+    /* background-color: blueviolet; */
+    outline: none;
+    height: 35px;
+    padding-top: 7px;
+    margin-left: 4px;
+    width: 90px;
+}
