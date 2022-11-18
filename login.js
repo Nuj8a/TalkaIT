@@ -1,11 +1,11 @@
-document.getElementById("id").innerHTML = "hello";
-let id;
+const LoginsignUp = document.getElementsByClassName("LoginsignUp");
+const Signup = document.getElementById("Signup");
 
-document.getElementById("loginbtn").onclick = function(){
-    
-    id = document.getElementById("userId").value;
-   return id;
-
-    
-}
-console.log(id);
+LoginsignUp.addEventListener("onclick", () => {
+    if (Signup.style.visibility == "hidden") {
+        Signup.style.visibility = "visible";
+    }
+    else {
+        Signup.style.visibility = "hidden";
+    }
+})

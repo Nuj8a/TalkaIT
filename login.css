@@ -4,12 +4,21 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+}
+
 #loginContainer {
     /* background-color: blue; */
     position: relative;
-    top:26vh;
-    left:25%;
-    height: 415px;
+    z-index: 0;
+    top: 26vh;
+    left: 25%;
+    height: 345px;
     width: 750px;
     padding: 15px;
 }
@@ -19,130 +28,259 @@
     border-right: dotted 4px gainsboro;
     /* background-color: yellow; */
     width: 45%;
-    height:50%;
+    height: 50%;
     margin-top: 50px;
 
 }
 
-#logo{
+#logo {
     position: relative;
     /* background-color: blanchedalmond; */
 }
 
-#talkkait{
-    top:50px;
-    color:rgb(120, 120, 120);
+#talkkait {
+    top: 40px;
+    color: rgb(120, 120, 120);
     position: absolute;
+    font-family: cursive;
     font-size: 75px;
- /* background-color: blueviolet; */
+    /* background-color: blueviolet; */
 }
 
-#talkfree{
-    color:rgb(120, 120, 120);
+#talkabout {
+    font-family: cursive;
+    color: rgb(164, 164, 164);
     position: absolute;
-    top:142px;
-    left:40%;
+    top: 133px;
+    left: 60%;
+    font-size: 16px;
     /* background-color: aqua; */
 }
 
 #login {
+    /* z-index: -1; */
     position: absolute;
     /* background-color: wheat; */
     width: 45%;
     left: 52%;
-    height:80%;
+    height: 80%;
     /* border: 1px solid; */
 }
 
-form{
+#loginForm {
     position: absolute;
-    border-radius:14px;
-    height:90%;
-    width:100%;
-    background-color:whitesmoke;
-    padding:30px;
-    border:2px solid gainsboro;
+    border-radius: 14px;
+    height: 300px;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 30px;
+    border: 2px solid gainsboro;
 }
 
-label {
+#loginForm label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
-    padding:8px;
+    padding: 8px;
     color: rgb(91, 91, 91);
     /* background-color:yellow; */
     /* background-color: rgb(255, 255, 255); */
- 
-    
+
+
 }
 
-#userId{
+#userId {
     height: 40px;
     border-radius: 10px;
     border: 50px;
     font-size: 16px;
     /* background-color: rgb(255, 255, 255); */
-    width:100%;
+    width: 100%;
     outline: none;
-    padding:10px;
+    padding: 10px;
     border: 2px solid gainsboro;
 }
 
 
-#password{
+#password {
     height: 40px;
     border-radius: 10px;
     border: 50px;
     font-size: 16px;
-    position:relative;
+    position: relative;
     padding: 10px;
     /* background-color: rgb(255, 255, 255); */
-    width:100%;
+    width: 100%;
     outline: none;
     border: 2px solid gainsboro;
 }
 
-#show{
-    height:20px;
-    width:25x;
-    position:absolute;
-    border-radius:20px;
-    border:none;
+#show {
+    height: 20px;
+    width: 25x;
+    position: absolute;
+    border-radius: 20px;
+    border: none;
     background-color: white;
-    left:270px;
-    top:135px;
-    
+    left: 270px;
+    top: 135px;
+
 }
 
-#show:hover{
-    background-color:#c4c3d0; 
+#show:hover {
+    background-color: #c4c3d0;
 }
 
-#show img{
+#show img {
     /* top:6px; */
     /* position: absolute; */
-    height:20px;
-    width:20px;
+    height: 20px;
+    width: 20px;
     /* right:5px; */
 }
 
-span{
-    color:rgb(71, 71, 71);
-    
+span {
+    color: rgb(71, 71, 71);
+
 }
 
-#loginbtn{
+#LoginSignUp {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+}
+
+.LoginsignUp {
+    margin-left:-10px;
+    color: rgb(24, 26, 178);
+    cursor: pointer;
+    text-decoration: underline;
+    border: none;
+    background-color: initial;
+
+}
+
+#loginbtn {
     border-radius: 10px;
     height: 40px;
     font-size: 20px;
     width: 100%;
     outline: none;
     border: 2px solid rgb(221, 221, 221);
-   
+
     background-color: rgb(211, 211, 211);
 }
 
-#loginbtn a{
+#loginbtn a {
     text-decoration: none;
     color: rgba(39, 39, 39, 0.611);
     /* background-color: blueviolet; */
+
+}
+
+/* SignUp container modal */
+
+#Signup {
+    background-color: rgba(58, 58, 58, 0.55);
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left:0px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+#SignupForm {
+    /* background-color: aquamarine; */
+    background-color: whitesmoke;
+    border: 2px solid gainsboro;
+    width: 300px;
+    height: 335px;
+    position: absolute;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#createAcc {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    /* background-color: blue; */
+    position: absolute;
+    padding-left: 0px;
+    top: 18px;
+    color: rgb(91, 91, 91);
+}
+
+#SignupForm label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    line-height: 25px;
+    /* border:1px solid; */
+    margin-left: 10px;
+    /* background-color: blue; */
+    /* padding:8px; */
+    color: rgb(91, 91, 91);
+}
+
+#email,
+#pass {
+    display: block;
+    width: 90%;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 10px;
+    offset: none;
+    margin-left: 10px;
+    padding: 10px;
+    border: 2px solid gainsboro;
+
+}
+
+.policy {
+    margin-top: -10px;
+    display: flex;
+    height: 30px;
+    /* background-color: aqua; */
+    flex-direction: row;
+    padding-left: 12px;
+    align-items: center;
+}
+
+#checkbox {
+    position: relative;
+    bottom: 6px;
+    width: 11px;
+    height: 25px;
+}
+
+#terms {
+    /* background-color: red; */
+    width: 90%;
+    font-size: 10px;
+    height: 25px;
+    padding-left: 5px;
+}
+
+#signupbtn {
+    margin-top:5px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+    border: 2px solid rgb(221, 221, 221);
+    background-color: rgb(211, 211, 211);
     
 }
+#signupbtn a{
+    text-decoration: none;
+    color: rgba(39, 39, 39, 0.611);
+    
+}
+
+
+
