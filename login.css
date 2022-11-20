@@ -126,15 +126,18 @@ body {
 
 }
 
-#show:hover {
+#show img:hover {
     background-color: #c4c3d0;
+    border-radius: 9px;
+    
 }
 
 #show img {
-    /* top:6px; */
-    /* position: absolute; */
-    height: 20px;
-    width: 20px;
+    top:8px;
+    left:8px;
+    position: absolute;
+    height: 18px;
+    width: 18px;
     /* right:5px; */
 }
 
@@ -148,14 +151,23 @@ span {
     padding: 10px;
 }
 
-.LoginsignUp {
-    margin-left:-10px;
-    color: rgb(24, 26, 178);
-    cursor: pointer;
-    text-decoration: underline;
+#popup {
+    width:55px;
+    background-color: blueviolet;
+    position: absolute;
+    color: rgb(66, 66, 66);   
+    bottom:236px;
+    right:560px;
+    /* text-decoration: underline; */
     border: none;
+    border-radius: 5px;
     background-color: initial;
+}
 
+#popup:hover{
+    cursor: pointer;
+    background-color: gainsboro;
+    width:55px;
 }
 
 #loginbtn {
@@ -165,7 +177,6 @@ span {
     width: 100%;
     outline: none;
     border: 2px solid rgb(221, 221, 221);
-
     background-color: rgb(211, 211, 211);
 }
 
@@ -189,7 +200,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: hidden;
+    
 }
 
 #SignupForm {
@@ -208,7 +219,7 @@ span {
     font-size: 20px;
     /* background-color: blue; */
     position: absolute;
-    padding-left: 0px;
+    padding-left: 13px;
     top: 18px;
     color: rgb(91, 91, 91);
 }
@@ -220,8 +231,6 @@ span {
     line-height: 25px;
     /* border:1px solid; */
     margin-left: 10px;
-    /* background-color: blue; */
-    /* padding:8px; */
     color: rgb(91, 91, 91);
 }
 
@@ -259,6 +268,7 @@ span {
 #terms {
     /* background-color: red; */
     width: 90%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 10px;
     height: 25px;
     padding-left: 5px;
@@ -279,6 +289,22 @@ span {
 #signupbtn a{
     text-decoration: none;
     color: rgba(39, 39, 39, 0.611);
+    
+}
+#close{
+    width:15px;
+    height:15px;
+    position: absolute;
+    top:200px;
+    right:555px;
+    display: flex;
+    background-color: rgb(172, 172, 172);
+    border:1px solid gainsboro;
+    border-radius: 50%;
+    justify-content: center;
+    color:whitesmoke;
+    align-items: center;
+    z-index: 1;
     
 }
 

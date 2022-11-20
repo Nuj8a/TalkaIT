@@ -4,7 +4,7 @@ const exercise = document.getElementById("exercise");
 const timer = document.getElementById("timer");
 
 function breatheOut() {
-    if (count > 1) {
+    if (count > 0) {
         --count;
         timer.innerHTML = count;
         switch (count) {
@@ -12,7 +12,7 @@ function breatheOut() {
                 timer.style.height = "150px";
                 timer.style.width = "150px";
                 exercise.innerHTML = "HOLD"
-                timer.innerHTML = ".";
+                timer.innerHTML = "·";
                 exercise.style.width = "95px";
                 exercise.style.height = "25px";
                 break;
@@ -66,8 +66,19 @@ function breatheOut() {
                 exercise.style.height = "25px";
                 break;
 
+            case 0:
+                timer.style.height = "50px";
+                timer.style.width = "50px";
+                timer.style.borderRadius = "37px";
+                timer.innerHTML = "·";
+                exercise.innerHTML = "Hold";
+                exercise.style.width = "100px";
+                exercise.style.height = "25px";
+                break;
+
+
         }
-        // console.log(count)
+        console.log(count)
         setTimeout(breatheOut, 1000);
     } else {
         breatheIn();
@@ -79,7 +90,7 @@ function breatheIn() {
     if (count < 7) {
         exercise.style.width = "85px";
         exercise.style.height = "25px";
-        // console.log(count)
+        console.log(count)
         switch (count) {
             case 1:
                 timer.style.height = "50px";
@@ -125,7 +136,7 @@ function breatheIn() {
                 timer.style.height = "150px";
                 timer.style.width = "150px";
                 exercise.innerHTML = "HOLD"
-                timer.innerHTML = ".";
+                timer.innerHTML = "·";
                 break;
 
         }
