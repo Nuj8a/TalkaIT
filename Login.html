@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talkait</title>
-    <link rel="stylesheet" href="login.css">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Talkait</title>
+        <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
     <div id="loginContainer">
         <div id="loginLogo">
-            <div id="logo">
                 <span id="talkkait">TalkaIT</span>
-                <span id="talkabout">talk about it</span>
-            </div>
+                <span id="talkabout">talk about it</span> 
         </div>
         <div id="login">
-            <form id="loginForm">
-                <label for="id">ID</label>
+            <form id="loginForm"  method="post">
+                <label for="id">Email</label>
                 <br>
-                <input type="text" for="id" id="userId" value="111">
+                <input type="text" for="id" id="userId" >
                 <br>
                 <br>
                 <label for="password">Password</label>
                 <br>
-                <input type="password" for="password" id="password" value="password">
+                <input type="password" for="password" id="password" >
                 <!-- <button id="show"><img src="show.png"></button> -->
                 <br>
                 <br>
@@ -35,19 +33,20 @@
                 <br>
                 <hr>
             </form>
+            <button id="popup">Sign Up</button>
         </div>
     </div>
-    <span><button id="popup">Sign Up</button></span>
+
     <div id="Signup" style="visibility: hidden">
-        <button id="close">x</button>
-        <form id="SignupForm">
+        <form id="SignupForm" method="post">
+            <button id="close">x</button>
             <span id="createAcc">Create an account :</span>
             <br>
             <br>
             <label for="email">Enter your email:</label>
-            <input type="text" for="email" id="email" value="hundredone@gmail.com">
+            <input type="text" for="email" id="email" name="email" value="hundredone@gmail.com">
             <label for="password">Enter new password:</label>
-            <input type="password" for="password" id="pass" value="basjfbibd">
+            <input type="password" for="password" id="pass" name="password">
             <label for="password">Confirm password:</label>
             <input type="password" for="password" id="pass" value="basjfbibd">
             <br>

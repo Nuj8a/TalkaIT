@@ -2,6 +2,26 @@
 let count = 1;
 const exercise = document.getElementById("exercise");
 const timer = document.getElementById("timer");
+const OnOff = document.getElementById("OnOff");
+
+
+OnOff.addEventListener("click",()=>{
+    if(OnOff.innerHTML=="Start"){
+        OnOff.innerHTML = "Stop";
+        breatheIn();
+    }
+    else if(OnOff.innerHTML == "Stop"){
+        // clearTimeout(breatheIn);
+        return;
+       
+    }
+
+});
+
+    
+
+
+
 
 function breatheOut() {
     if (count > 0) {
@@ -148,6 +168,7 @@ function breatheIn() {
 }
 
 
-breatheIn();
+
+
 
 

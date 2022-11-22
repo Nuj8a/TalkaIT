@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     /* background-color: black; */
     display: flex;
     flex-direction: row;
@@ -14,36 +14,39 @@ body {
 
 #loginContainer {
     /* background-color: blue; */
-    position: relative;
-    z-index: 0;
+    position: absolute;
+    /* z-index: 0; */
     top: 26vh;
-    left: 25%;
+    left: 26%;
     height: 345px;
     width: 750px;
     padding: 15px;
 }
 
 #loginLogo {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
     position: absolute;
     border-right: dotted 4px gainsboro;
     /* background-color: yellow; */
-    width: 45%;
-    height: 50%;
+    width: 350px;
+    height: 190px;
     margin-top: 50px;
 
 }
 
-#logo {
-    position: relative;
-    /* background-color: blanchedalmond; */
-}
 
 #talkkait {
+    /* padding-left:20px; */
+    margin-left: 20px;
     top: 40px;
     color: rgb(120, 120, 120);
     position: absolute;
     font-family: cursive;
     font-size: 75px;
+    width: 300px;
     /* background-color: blueviolet; */
 }
 
@@ -52,8 +55,8 @@ body {
     color: rgb(164, 164, 164);
     position: absolute;
     top: 133px;
-    left: 60%;
-    font-size: 16px;
+    left: 63%;
+    font-size: 14px;
     /* background-color: aqua; */
 }
 
@@ -129,22 +132,18 @@ body {
 #show img:hover {
     background-color: #c4c3d0;
     border-radius: 9px;
-    
+
 }
 
 #show img {
-    top:8px;
-    left:8px;
+    top: 8px;
+    left: 8px;
     position: absolute;
     height: 18px;
     width: 18px;
     /* right:5px; */
 }
 
-span {
-    color: rgb(71, 71, 71);
-
-}
 
 #LoginSignUp {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -152,22 +151,22 @@ span {
 }
 
 #popup {
-    width:55px;
+    width: 55px;
     background-color: blueviolet;
     position: absolute;
-    color: rgb(66, 66, 66);   
-    bottom:236px;
-    right:560px;
+    color: rgb(66, 66, 66);
+    right: 32px;
+    bottom:-8px;
     /* text-decoration: underline; */
     border: none;
     border-radius: 5px;
     background-color: initial;
 }
 
-#popup:hover{
+#popup:hover {
     cursor: pointer;
     background-color: gainsboro;
-    width:55px;
+    width: 55px;
 }
 
 #loginbtn {
@@ -196,11 +195,11 @@ span {
     height: 100vh;
     position: fixed;
     top: 0px;
-    left:0px;  
+    left: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 #SignupForm {
@@ -275,7 +274,7 @@ span {
 }
 
 #signupbtn {
-    margin-top:5px;
+    margin-top: 5px;
     background-color: aquamarine;
     border-radius: 10px;
     height: 40px;
@@ -284,29 +283,28 @@ span {
     outline: none;
     border: 2px solid rgb(221, 221, 221);
     background-color: rgb(211, 211, 211);
-    
+
 }
-#signupbtn a{
+
+#signupbtn a {
     text-decoration: none;
     color: rgba(39, 39, 39, 0.611);
-    
+
 }
-#close{
-    width:15px;
-    height:15px;
-    position: absolute;
-    top:200px;
-    right:555px;
-    display: flex;
-    background-color: rgb(172, 172, 172);
-    border:1px solid gainsboro;
+
+#close {
+    width: 15px;
+    height: 15px;
+    border: 1px solid gainsboro;
     border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top:5px;
+    display: flex;
     justify-content: center;
-    color:whitesmoke;
     align-items: center;
-    z-index: 1;
-    
+    background-color: rgb(172, 172, 172);
+    color: whitesmoke;
+
+
 }
-
-
-

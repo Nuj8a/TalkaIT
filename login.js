@@ -21,14 +21,14 @@ close.addEventListener("click",()=>{
 
 // show password
 
-const show = document.getElementById("show");
-const password = document.getElementById("password");
+// const show = document.getElementById("show");
+// const password = document.getElementById("password");
 
-show.addEventListener("click",() => {
-    if(password.type == "password"){
-        password.type = "text";
-    }else{
-        password.type = "password";
-    }
-})
+// show.addEventListener("click",() => {
+//     if(password.type == "password"){
+//         password.type = "text";
+//     }else{
+//         password.type = "password";
+//     }
+// })
 
