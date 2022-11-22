@@ -38,24 +38,24 @@
     </div>
 
     <div id="Signup" style="visibility: hidden">
-        <form id="SignupForm" method="post">
-            <button id="close">x</button>
+        <form id="SignupForm" action="data.php" method="post">
+            <button type="button" id="close">x</button>
             <span id="createAcc">Create an account :</span>
             <br>
             <br>
             <label for="email">Enter your email:</label>
-            <input type="text" for="email" id="email" name="email" value="hundredone@gmail.com">
+            <input type="email" for="email" id="email" name="email">
             <label for="password">Enter new password:</label>
             <input type="password" for="password" id="pass" name="password">
             <label for="password">Confirm password:</label>
-            <input type="password" for="password" id="pass" value="basjfbibd">
+            <input type="password" for="password" id="pass" name="password">
             <br>
             <div class="policy">
                 <input type="checkbox" for="checkbox" id="checkbox">
                 <span id="terms">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies
                     Policy.</span>
             </div>
-            <button type="submit" id="signupbtn"><a href="Login.html">Sign Up</a></button>
+            <button type="submit" id="signupbtn">Sign Up</button>
         </form>
     </div>
 
