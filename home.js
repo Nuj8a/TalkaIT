@@ -2,21 +2,25 @@
 let count = 1;
 const exercise = document.getElementById("exercise");
 const timer = document.getElementById("timer");
-const OnOff = document.getElementById("OnOff");
+const On = document.getElementById("On");
+const Off = document.getElementById("Off");
 
 
-OnOff.addEventListener("click",()=>{
-    if(OnOff.innerHTML=="Start"){
-        OnOff.innerHTML = "Stop";
+On.addEventListener("click",()=>{
+    if(On.innerHTML=="Start"){
+        On.style.visibility = "hidden";
+        Off.style.visibility = "visible";
         breatheIn();
     }
-    else if(OnOff.innerHTML == "Stop"){
-        // clearTimeout(breatheIn);
-        return;
-       
-    }
-
 });
+
+Off.addEventListener("click", ()=>{
+    if(On.innerHTML=="Stop"){
+        On.style.visibility = "visible";
+        Off.style.visibility = "hidden";
+        clearTimeout();
+    }
+})
 
     
 
