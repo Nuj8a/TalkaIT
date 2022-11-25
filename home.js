@@ -1,4 +1,3 @@
-
 let count = 1;
 const exercise = document.getElementById("exercise");
 const timer = document.getElementById("timer");
@@ -6,23 +5,25 @@ const On = document.getElementById("On");
 const Off = document.getElementById("Off");
 
 
-On.addEventListener("click",()=>{
-    if(On.innerHTML=="Start"){
+On.addEventListener("click", () => {
+    if (On.innerHTML == "Start") {
         On.style.visibility = "hidden";
         Off.style.visibility = "visible";
         breatheIn();
     }
 });
 
-Off.addEventListener("click", ()=>{
-    if(On.innerHTML=="Stop"){
+Off.addEventListener("click", () => {
+    if (On.innerHTML == "Stop") {
         On.style.visibility = "visible";
         Off.style.visibility = "hidden";
         clearTimeout();
     }
+    console.log('clicked')
+    clearInterval(breatheIn);
+    clearInterval(breatheOut);
 })
 
-    
 
 
 
@@ -103,7 +104,14 @@ function breatheOut() {
 
         }
         console.log(count)
-        setTimeout(breatheOut, 1000);
+        let breadthOut = setTimeout(breatheOut, 1000);
+
+        Off.addEventListener("click", () => {
+            On.style.visibility = "visible";
+            Off.style.visibility = "hidden";
+            clearInterval(breadthOut);
+        })
+
     } else {
         breatheIn();
     }
@@ -165,7 +173,14 @@ function breatheIn() {
 
         }
         count++;
-        setTimeout(breatheIn, 1000);
+        let breadthIn = setTimeout(breatheIn, 1000);
+
+        Off.addEventListener("click", () => {
+            On.style.visibility = "visible";
+            Off.style.visibility = "hidden";
+            clearInterval(breadthIn);
+        })
+
     } else {
         breatheOut();
     }
