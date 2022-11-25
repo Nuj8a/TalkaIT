@@ -154,19 +154,14 @@ body {
     width: 55px;
     background-color: blueviolet;
     position: absolute;
-    color: rgb(66, 66, 66);
+    color: rgb(0, 0, 233);
     right: 32px;
     bottom:-8px;
     /* text-decoration: underline; */
     border: none;
     border-radius: 5px;
     background-color: initial;
-}
-
-#popup:hover {
     cursor: pointer;
-    background-color: gainsboro;
-    width: 55px;
 }
 
 #loginbtn {

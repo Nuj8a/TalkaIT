@@ -16,7 +16,7 @@
     <main>
         <div id="profile">
             <div id="category">
-                <a id="idNum"><img src="userId.png"><span id="id"></span></a>
+                <a><img src="userId.png"><span id="idNum">Anonymous</span></a>
                 <br>
                 <a id="logout" href="Login.html"><img src="logout.png">Logout</a>
             </div>
@@ -38,8 +38,8 @@
                 
             </div>
         </div>
-        <button id="On" style="visibility:visible">Start</button>
-        <button id="Off" style="visibility:hidden">Stop</button>
+        <button id="On" style="visibility:visible" onclick="handelClick(true)">Start</button>
+        <button id="Off" style="visibility:hidden" onclick="handelClick(false)">Stop</button>
     </main>
     <script src="login.js"></script>
     <script src="home.js"></script>
