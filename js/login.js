@@ -19,16 +19,18 @@ close.addEventListener("click",()=>{
 
 
 
-// show password
+// for password hidden or show logic
+const eyeOpen = document.getElementById('eyeOpen')
+const eyeClose = document.getElementById('eyeClose')
+const password = document.getElementById('password');
 
-// const show = document.getElementById("show");
-// const password = document.getElementById("password");
-
-// show.addEventListener("click",() => {
-//     if(password.type == "password"){
-//         password.type = "text";
-//     }else{
-//         password.type = "password";
-//     }
-// })
-
+eyeOpen.addEventListener('click', ()=>{
+    eyeOpen.style.display='none';
+    eyeClose.style.display='block'
+    password.type = 'password'
+})
+eyeClose.addEventListener('click',()=>{
+    eyeOpen.style.display='block';
+    eyeClose.style.display='none'
+    password.type = 'text'
+})
