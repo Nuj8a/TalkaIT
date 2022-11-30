@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header {
+    font-family: cursive;
+    width: 100%;
+    background-color: rgba(210, 210, 210, 0.142);
+    border-bottom: 2px solid gainsboro;
+    height: 70px;
+    font-size: 47px;
+    color: rgb(120, 120, 120);
+    display: block;
+    text-align: center;
+    /* padding-top: 0px; */
+
+}
+
+main {
+    
+    display: flex;
+    flex-direction: row;
+    /* background-color:red; */
+    height: 727px;
+
+}
+
+#profile {
+    /* background-color: red; */
+    background-color: rgba(210, 210, 210, 0.142);
+    width: 325px;
+    height: 100%;
+    position: relative;
+    border-right: 2px solid gainsboro;
+}
+
+#category {
+    margin: 15px;
+    width: 140px;
+    height: 120px;
+    position: absolute;
+    /* background-color:wheat; */
+    display: flex;
+    align-items: center;
+    top: 250px;
+    left: 50px;
+}
+
+#idNum {
+    position: absolute;
+    top:48px;
+    font-family:Arial, Helvetica, sans-serif;    
+    padding-left:4px;
+    color: rgb(74, 74, 74);
+    /* border:1px solid ; */
+    border-radius: 9px;
+    width: 100px;
+    font-size:17px;
+    background-color: rgb(208, 208, 208);
+
+}
+
+img {
+    height: 25px;
+
+}
+
+#logout {
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-size: 17px;
+    text-decoration: none;
+    /* color: rgb(120, 120, 120); */
+    color: rgb(54, 54, 54);
+    /* font-weight: bold; */
+    height: 25x;
+    width: 90px;
+    margin-top: 15px;
+
+}
+
+#logout:hover {
+    background-color: gainsboro;
+    border-radius: 8px;
+    width: 82px;
+    height: 25px;
+}
+
+#center {
+    /* background-color: red; */
+    height: 725px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    /* position: absolute; */
+    width: 100%;
+    height: 320px;
+    /* background-color: red; */
+}
+
+#center textarea {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 200px;
+    width: 75%;
+    position: absolute;
+    left: 13%;
+    top: 30px;
+    resize: none;
+    outline: none;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    color: rgb(102, 102, 102);
+    padding: 10px 10px 10px 15px;
+    font-size: 18px;
+
+}
+textarea::placeholder{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    word-spacing: 4px;
+    /* padding-left: 5px; */
+
+ 
+}
+
+
+#center button {
+    height: 25px;
+    width: 50px;
+    color: rgb(54, 54, 54);
+    border-radius: 5px;
+    border: 1px solid rgb(189, 189, 189);
+    position: absolute;
+    top: 240px;
+    left: 13%;
+
+}
+
+#countdown {
+    /* padding-top:80px; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+    /* background-color: green; */
+    align-items: center;
+
+}
+#countdownContainer{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    justify-content: center;
+    /* background-color: red; */
+    width:100%;
+    height:200px;
+}
+
+#timer {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px; 
+    background-color: rgba(199, 199, 199, 0.183);
+    /* background-color: red; */
+    transition: height 1s, width 1s ease ;
+    font-size: 1.5rem;
+}
+
+#timer:hover {
+    /* height: 300px;
+    width: 300px;
+    border-radius: 190px; */
+
+}
+
+#exercise {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(255, 212, 212);
+    border-radius: 20px;
+    font-size: 14px;
+    /* background-color: rgb(255, 0, 0); */
+    background-color: rgba(255, 255, 0, 0.341);
+    /* background-color: red; */
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+#On{
+    position: absolute;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left:879px;
+    bottom:120px;
+    height: 50px;
+    width:50px;
+    font-size:18px;
+    border-radius:50%;
+    background-color: rgba(255, 23, 23, 0.864);
+    color:rgb(239, 239, 239);
+    box-shadow: 0px 6px 8px rgba(128, 128, 128, 0.677);
+    
+}
+#Off{
+    position: absolute;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left:879px;
+    bottom:120px;
+    height: 50px;
+    width:50px;
+    font-size:18px;
+    border-radius:50%;
+    background-color: rgba(255, 23, 23, 0.864);
+    color:rgb(239, 239, 239);
+    box-shadow: 0px 6px 8px rgba(128, 128, 128, 0.677);
+    
+}
+
+#OnOffBtn{
+    display: flex;
+}
