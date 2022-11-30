@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
-<body>
-    <header>
-        TalkaIT
-    </header>
+  <body>
+    <header>TalkaIT</header>
     <main>
-        <div id="profile">
-            <div id="category">
-                <a><img src="./images/userid.png"><span id="idNum">Anonymous</span></a>
-                <br>
-                <a id="logout" href="./pages/Login.html"><img src="./images/logout.png">Logout</a>
-            </div>
+      <div id="profile">
+        <div id="category">
+          <a
+            ><img src="./images/userid.png" /><span id="idNum"
+              >Anonymous</span
+            ></a
+          >
+          <br />
+          <a id="logout" href="./pages/Login.html"
+            ><img src="./images/logout.png" />Logout</a
+          >
         </div>
-        <div id="center">
-            <div class="post">
-                <form>
-                <textarea placeholder="Talk about it ! "></textarea>
-                <!-- <input type="submit" value="Post"> -->
-                <button type="submit">Post</button>
-                </form>
-            </div>
-            <div id="countdown">
-                <div id="countdownContainer">
-                    <p id="timer"></p>
-                </div>
-                <br>
-                <p id="exercise"></p>
-                
-            </div>
+      </div>
+      <div id="center">
+        <div class="post">
+          <form action="./php/posts.php" method="post">
+            <textarea placeholder="Talk about it ! " name="post"></textarea>
+            <!-- <input type="submit" value="Post"> -->
+            <button type="submit">Post</button>
+          </form>
         </div>
-        <button id="On"  class='buttonss' style="visibility:visible">Start</button>
-        <button id="Off" class='buttonss'  style="visibility:hidden">Stop</button>
+        <div id="countdown">
+          <div id="countdownContainer">
+            <p id="timer"></p>
+          </div>
+          <br />
+          <p id="exercise"></p>
+        </div>
+      </div>
+      <button id="On" class="buttonss" style="visibility: visible">
+        Start
+      </button>
+      <button id="Off" class="buttonss" style="visibility: hidden">Stop</button>
     </main>
     <script src="./js/login.js"></script>
     <script src="./js/app.js"></script>
     <!-- <script src="gaurab.js"></script> -->
-</body>
-
+  </body>
 </html>
