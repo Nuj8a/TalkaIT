@@ -18,7 +18,7 @@
             <div id="category">
                 <a><img src="userid.png"><span id="idNum">Anonymous</span></a>
                 <br>
-                <a id="logout" href="login.html"><img src="logout.png">Logout</a>
+                <a id="logout" href="logout.php"><img src="logout.png">Logout</a>
             </div>
         </div>
         <div id="center">
@@ -35,12 +35,12 @@
                 </div>
                 <br>
                 <p id="exercise"></p>
-                <div id="OnOffBtn" >
-                    <button id="On" style="visibility:visible" onclick="handelClick(true)">Start</button>
-                    <button id="Off" style="visibility:hidden" onclick="handelClick(false)">Stop</button>
-                </div>  
             </div>
         </div>
+        <div id="OnOffBtn" >
+            <button id="On" style="visibility:visible" onclick="handelClick(true)">Start</button>
+            <button id="Off" style="visibility:hidden" onclick="handelClick(false)">Stop</button>
+        </div>  
     </main>
     <script src="login.js"></script>
     <script src="home.js"></script>

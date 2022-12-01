@@ -16,7 +16,7 @@
                 <span id="talkabout">talk about it</span> 
         </div>
         <div id="login">
-            <form id="loginForm"  method="post">
+            <form id="loginForm"  action="loginhandler.php" method="post">
                 <label for="login_email">Email</label>
                 <br>
                 <input type="text" for="login_email" id="login_email" name="login_email" >
@@ -28,7 +28,7 @@
                 <!-- <button id="show"><img src="show.png"></button> -->
                 <br>
                 <br>
-                <button type="submit" id="loginbtn"><a href="index.html">Log In</a></button>
+                <button type="submit" id="loginbtn" name="loginbtn">Log In</button>
                 <br>
                 <br>
                 <hr>
@@ -44,17 +44,19 @@
             <br>
             <br>
             <label for="signup_email">Enter your email:</label>
+            <br>
             <input type="email" for="signup_email" id="signup_email" name="signup_email">
             <label for="signup_password">Enter new password:</label>
             <input type="password" for="signup_password" id="signup_password" name="signup_password">
             <label for="signup_password">Confirm password:</label>
             <input type="password" for="signup_password" id="signup_password" >
             <br>
-            <div class="policy">
+            <hr>
+            <!-- <div class="policy">
                 <input type="checkbox" for="checkbox" id="checkbox">
                 <span id="terms">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies
                     Policy.</span>
-            </div>
+            </div> -->
             <button type="submit" id="signupbtn">Sign Up</button>
         </form>
     </div>
