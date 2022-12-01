@@ -15,7 +15,6 @@
   #loginContainer {
     /* background-color: blue; */
     position: absolute;
-    /* z-index: 0; */
     top: 26vh;
     left: 26%;
     height: 345px;
@@ -25,7 +24,6 @@
   
   #loginLogo {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -37,7 +35,6 @@
   }
   
   #talkkait {
-    /* padding-left:20px; */
     margin-left: 20px;
     top: 40px;
     color: rgb(120, 120, 120);
@@ -161,9 +158,8 @@
   
   #popup {
     width: 55px;
-    background-color: blueviolet;
     position: absolute;
-    color: rgb(0, 0, 233);
+    /* color: rgb(0, 0, 233); */
     right: 32px;
     bottom: -8px;
     border: none;
@@ -178,7 +174,7 @@
     font-size: 20px;
     width: 100%;
     outline: none;
-    border: 2px solid rgb(221, 221, 221);
+    border: 2px solid rgb(162, 162, 162);
     background-color: rgb(211, 211, 211);
     cursor: pointer;
   }
