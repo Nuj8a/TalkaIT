@@ -8,7 +8,6 @@ if (isset($_POST['loginbtn'])) {
   $loginPass = mysqli_real_escape_string($conn, $_POST['login_password']);
 
   if ($loginEmail != "" && $loginPass != "") {
-    echo "test";
     $sql_query = "SELECT count(*) as cntUser FROM signup WHERE email='$loginEmail' and password='$loginPass'";
     $result = mysqli_query($conn, $sql_query);
     $row = mysqli_fetch_array($result);
@@ -19,7 +18,8 @@ if (isset($_POST['loginbtn'])) {
       $_SESSION['email'] = $loginEmail;
       header('Location: index.php');
     } else {
-      echo "";
+      header("location: loginerror.php");
+
     }
 
   } else {
