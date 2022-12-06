@@ -103,10 +103,10 @@ img {
     flex-direction: column;
 }
 
-.post {
+#post {
     /* position: absolute; */
     width: 100%;
-    height: 320px;
+    height: 70%;
     /* background-color: red; */
 }
 
@@ -147,50 +147,62 @@ textarea::placeholder{
 
 }
 
-#countdown {
-    /* padding-top:80px; */
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    /* background-color: yellow; */
-    background-color: green;
-    align-items: center;
-
-}
-
-#countdownContainer{
-    display: flex;
-    align-items: center;
-    padding-top: 30px;
-    justify-content: center;
-    /* background-color: red; */
+#countdown{
+    /* background-color: green; */
+    height:100%;
     width:100%;
-    height:200px;
+    display: grid;
+    position:relative;
 }
 
-#timer {
+#breatheWork{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
+    font-weight: 500;
+    color: rgb(120, 120, 120);
+    height:30px;
+    width:100%;
+    /* background-color: yellowgreen; */
+}
+#countdownTimer{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 50px;
-    border-radius: 25px; 
-    background-color: rgba(199, 199, 199, 0.183);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 160px;
+    width: 100%;
+    position: absolute;
+    top: 40px;
     /* background-color: red; */
     transition: height 1s, width 1s ease ;
     font-size: 1.5rem;
 }
-
-#timer:hover {
-    /* height: 300px;
-    width: 300px;
-    border-radius: 190px; */
-
+#timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px; 
+    background-color: rgba(199, 199, 199, 0.183);
+    transition: height 1s, width 1s ease ;
 }
-
+#exerciseContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:45px;
+    position: absolute;
+    top:210px;
+    /* background-color: red; */
+}
 #exercise {
     position: absolute;
     display: flex;
@@ -201,7 +213,6 @@ textarea::placeholder{
     font-size: 14px;
     /* background-color: rgb(255, 0, 0); */
     background-color: rgba(255, 255, 0, 0.341);
-    /* background-color: red; */
     font-family:Arial, Helvetica, sans-serif;
 
 }
@@ -210,8 +221,8 @@ textarea::placeholder{
     outline: none;
     border: none;
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
     left:878px;
     bottom:110px;
     height: 50px;
@@ -227,3 +238,4 @@ textarea::placeholder{
 #OnOffBtn{
     display: flex;
 }
+

@@ -18,7 +18,8 @@ Off.addEventListener("click", ()=>{
     if(Off.innerHTML=="Stop"){
         On.style.visibility = "visible";
         Off.style.visibility = "hidden";
-        clearTimeout();
+        clearTimeout(breatheIn);
+        clearTimeout(breatheOut);
     }
 })
 

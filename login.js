@@ -4,6 +4,7 @@ const button = document.getElementById("popup");
 const modal = document.getElementById("Signup");
 const close = document.getElementById("close");
 
+
 button.addEventListener("click", () => {
     if (modal.style.visibility == "hidden") {
         modal.style.visibility = "visible";
@@ -11,11 +12,13 @@ button.addEventListener("click", () => {
         modal.style.visibility = "hidden";
     }
 })
+
 close.addEventListener("click",()=>{
     if(modal.style.visibility == "visible"){
         modal.style.visibility = "hidden";
     }
 })
+
 
 
 

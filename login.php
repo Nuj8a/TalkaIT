@@ -49,7 +49,7 @@
             <label for="signup_password">Enter new password:</label>
             <input type="password" for="signup_password" id="signup_password" name="signup_password">
             <label for="signup_password">Confirm password:</label>
-            <input type="password" for="signup_password" id="signup_password" >
+            <input type="password" for="signup_password" id="signup_check_password" >
             <br>
             <hr>
             <!-- <div class="policy">
@@ -60,6 +60,7 @@
             <button type="submit" id="signupbtn">Sign Up</button>
         </form>
     </div>
+    
 
     <script src="login.js"></script>
 </body>

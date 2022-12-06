@@ -22,30 +22,30 @@
             </div>
         </div>
         <div id="center">
-            <div class="post">
+            <div id="post">
                 <form>
                 <textarea placeholder="Talk about it ! "></textarea>
                 <!-- <input type="submit" value="Post"> -->
                 <button type="submit">Post</button>
                 </form>
             </div>
-            <div id="countdown">
-                <p style="font-size:18px; 
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(74, 74, 74);">Breathe Work</p>
-                <div id="countdownContainer">
-                    <p id="timer">·</p>
+            <div id="countdown" >
+                    <div id="breatheWork">Breathe Work</div>
+                    <div id="countdownTimer">
+                        <span id="timer">·</span>
+                    </div>
+                    <div id="exerciseContainer">
+                        <span id="exercise"></span>
+                    </div>
+                    <div id="OnOffBtn"></div>
                 </div>
-                <br>
-                <p id="exercise"></p>
             </div>
-        </div>
-        <div id="OnOffBtn" >
-            <button id="On" style="visibility:visible" onclick="handelClick(true)">Start</button>
-            <button id="Off" style="visibility:hidden" onclick="handelClick(false)">Stop</button>
-        </div>  
+            <div id="OnOffBtn" >
+                <button id="On" style="visibility:visible" onclick="handelClick(true)">Start</button>
+                <button id="Off" style="visibility:hidden" onclick="handelClick(false)">Stop</button>
+            </div>  
     </main>
-    <script src="login.js"></script>
+    <script src="/login.js"></script>
     <script src="home.js"></script>
 </body>
 

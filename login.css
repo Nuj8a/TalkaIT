@@ -230,7 +230,7 @@
   }
   
   #signup_email,
-  #signup_password {
+  #signup_password,#signup_check_password{
     display: block;
     width: 90%;
     height: 35px;
@@ -301,3 +301,4 @@
     color: whitesmoke;
     cursor: pointer;
   }
+
